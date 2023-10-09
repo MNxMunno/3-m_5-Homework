@@ -175,8 +175,10 @@ nav li a:hover {
 
 .product_card:first-child {
   padding-left: 91px;
+  padding-right: 45px;
 }
 .product_card:last-child {
+  padding-left: 45px;
   padding-right: 90px;
 }
 
@@ -613,13 +615,13 @@ svg:hover {
   background: #fff;
   box-shadow: 3px 3px 15px 1px rgba(233, 233, 233, 0.5);
   position: absolute;
-  gap: 200px;
-  left: 220px;
-  bottom: -4600px;
+  /* gap: 150px; */
+  left: 150px;
+  right: 150px;
+  bottom: -4650px;
 }
 
 .subscribe_card h6 {
-  width: 371px;
   color: #0b132a;
   font-family: Rubik;
   font-size: 35px;
@@ -726,7 +728,7 @@ ul li a:hover {
 
 /***********  MEDIA ************/
 
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 1217px) {
   .hero_cards {
     display: flex;
     justify-content: center;
@@ -759,6 +761,85 @@ ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 40px;
+  }
+  .subscribe_cards {
+    left: 150px;
+    right: 150px;
+    bottom: -5650px;
+  }
+
+  .subscribe_card h6 {
+    font-size: 24px;
+  }
+
+  .subscribe_card p {
+    font-style: 14px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .subscribe_cards {
+    left: 150px;
+    right: 150px;
+    bottom: -6400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sub_card1 {
+    display: none;
+  }
+
+  .subscribe_card {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .product_cards {
+    margin-top: 150px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .pro_2 {
+    padding-top: 37px;
+    padding-bottom: 37px;
+
+    border-left: transparent;
+    border-right: transparent;
+    border-top: 2px solid #eeeff2;
+    border-bottom: 2px solid #eeeff2;
+  }
+
+  .product_card:first-child {
+    padding-top: 95px;
+    padding-left: 45px;
+    padding-right: 65px;
+    padding-bottom: 45px;
+  }
+  .product_card:last-child {
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 60px;
+    padding-bottom: 65px;
+  }
+
+  .features_cards {
+    padding-top: 80px;
+  }
+
+  .subscribe_cards {
+    display: none;
+  }
+  .owl-theme {
+    padding-bottom: 150px;
   }
 }
 
