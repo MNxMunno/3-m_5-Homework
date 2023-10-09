@@ -780,6 +780,14 @@ ul li a:hover {
     transition: all 0.3s ease-in-out;
     z-index: 10;
   }
+
+  .box_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
   .menu {
     display: block;
   }
@@ -800,7 +808,11 @@ ul li a:hover {
   }
 
   .foot_card {
-    width: 200px;
+    width: 250px;
+  }
+
+  .foot_card ul {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 656px) {
